@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    @font-face {
+      font-family: 'Londona';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("public/tipografia/Londona_reguler.otf") format('opentype');
+    }
+    @font-face {
+      font-family: 'Cocogoose';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("public/tipografia/Cocogoose.ttf") format('opentype');
+    }
+    @font-face {
+      font-family: 'Coolvetica';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("public/tipografia/Coolvetica.otf") format('opentype');
+    }
+  }

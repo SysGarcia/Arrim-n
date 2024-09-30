@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Arrimón! 🫗</title>
+	<style>
+		@tailwind base;
+		@tailwind components;
+		@tailwind utilities;
+		
+		@layer base {
+			@font-face {
+				font-family: 'Londona';
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				src: url("/tipografia/Londona_reguler.otf") format('opentype');
+			}
+			@font-face {
+				font-family: 'Cocogoose';
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				src: url("/tipografia/Cocogoose.ttf") format('opentype');
+			}
+			@font-face {
+			font-family: 'Coolvetica';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url("public/tipografia/Coolvetica.otf") format('opentype');
+			}
+		}
+	</style>
+	</head>
+	<body class="bg-[#0a0a0a]">	
+		<header class="relative flex justify-center items-center text-center flex-col w-screen h-screen" 
+		style="
+				background-image: linear-gradient(to bottom, #000000b3 60%, rgba(246,130,46,1) 100%), url('/assets/image_1.url');
+			background-size: cover;
+			background-position: center;s
+		">
+		<!-- Capa de superposición para el efecto de brillo reducido -->
+		<div style="
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			backdrop-filter: blur(8px); /* Difuminado más suave */
+			z-index: 1; 
+		"></div>
+		<div class="flex flex-col items-center justify-center text-center z-10">
+			<!-- Título y subtítulo -->
+			<h1 class="flex items-center flex-col sm:flex-row justify-center relative text-7xl md:text-8xl font-Londona italic font-bold text-white drop-shadow-lg gap-5">
+				Arrimón
+				<svg xmlns="http://www.w3.org/2000/svg" width="29mm" height="32mm" viewBox="0 0 29 32" version="1.1" id="svg1" xml:space="preserve" inkscape:export-filename="dibujo.svg" inkscape:export-xdpi="96" inkscape:export-ydpi="96">
+					<sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:document-units="mm" inkscape:zoom="4.0970529" inkscape:cx="-25.017983" inkscape:cy="99.461737" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="1042" inkscape:window-y="459" inkscape:window-maximized="1" inkscape:current-layer="layer1"/>
+					<defs id="defs1"/>
+					<g xmlns="http://www.w3.org/2000/svg" id="layer1">
+					  <path style="display:inline;fill:#e3dbdb;stroke-width:0.264583" d="m 20.546448,9.1172606 c 0,0 -3.0595,3.5617994 -2.87684,3.6074694 0.18266,0.0457 2.73985,2.23754 2.73985,2.23754 0,0 3.46915,-3.0925 3.19095,-3.15083 -0.50379,-0.10563 -3.05396,-2.6941794 -3.05396,-2.6941794 z" id="path5"/>
+					  <path style="display:inline;fill:#ffffff;stroke-width:0.264583" d="m 11.582908,3.9932614 c -0.60364,0.8085 -2.6801996,0.68309 -2.51858,1.67905 0.11794,0.7268 1.45318,-0.0252 2.1311,0.58121 0.81508,0.7291304 -1.16287,0.329 -3.2289496,0.5812104 -1.02743,0.12542 2.7768996,0.8395297 2.7768996,0.8395297 0,0 -2.2205496,0.18729 -3.8512296,0.8584394 -1.1431828,0.4704997 4.0416796,0.0228 2.9471296,0.4977197 -1.7708696,0.7684397 -2.0000396,0.8257497 -2.7801496,1.6066394 -0.27854,0.27881 -0.866071,1.90954 1.10109,1.9452 C 9.370508,12.60416 9.615288,11.78111 9.158898,11.70815 8.4329784,11.59211 7.8373284,11.2261 7.8373284,11.2261 c 0,0 -0.0337,-0.74221 1.1624196,-0.77495 0.64555,-0.0177 0.85943,0.48729 1.96087,1.39074 0.34637,0.28411 -0.25796,0.86542 -0.47558,1.257 -1.06551,1.91723 -1.08103,2.04803 -1.09784,3.16437 -0.0367,2.43751 0.71037,3.55184 0.71037,3.55184 l -0.97652,3.51403 c 0,0 0.0716,0.97566 2.07436,2.49183 0.55588,0.42082 -2.4125896,-0.92813 -2.06652,-0.32289 0.54092,0.946 3.25382,0.34889 4.06847,1.54989 0.71803,1.05856 0.21729,3.88257 0.21729,3.88257 -1.3631,-0.59004 -3.65438,-1.50975 -5.1252396,-2.46183 -1.75846,-1.13824 -4.8434199,-4.0039 -4.8434199,-4.0039 0,0 -2.64162596,-2.91871 -2.64773896,-5.03715 -0.0024,-0.84068 3.37107696,4.66813 2.90605296,3.0352 -0.06759,-0.23735 -2.15779,-4.20278 -2.066527,-6.78078 0.07493,-2.11654 0.353679,-3.36224 1.066504,-4.79182 0.931151,-1.8674494 3.3520869,-4.4533886 5.1330789,-5.5408086 1.1333096,-0.69196 4.2448096,-2.0248 3.7455996,-1.35618 z" id="path3"/>
+					  <path style="display:inline;fill:#ffffff;stroke-width:0.264583" d="m 8.6637984,3.6564714 c 0.3509696,-0.49776 -1.4156,-0.31965 -1.4156,-0.31965 0,0 -0.70325,-1.97201 -2.6941789,-1.2786 -1.51112,0.5263 -1.780905,2.78552 -1.780905,2.78552 0,0 -0.317789,-1.72424 0.09133,-2.42021 0.505351,-0.85967 3.5093269,-1.37795 3.0092491,-1.42342 -1.2962371,-0.11786997 -2.6700851,0.0195 -3.5115551,0.92112 -0.672726,0.72084 -0.563898,1.94237 -0.456643,2.9225 0.08179,0.74743 0.821956,2.1005604 0.821956,2.1005604 0,0 -1.55946,2.5188188 -1.96356196,3.9271182 -0.344665,1.20117 -0.365315,3.65314 -0.365315,3.65314 L 2.6361185,9.1818306 c 0.449277,-1.0727694 1.500493,-2.4730192 2.9225091,-3.7444692 0.9919508,-0.88692 2.9491108,-1.55956 3.1051708,-1.78089 z" id="path2"/>
+					  <path style="display:inline;fill:#ffffff;stroke-width:0.281471" d="m 18.965358,3.7283414 c -0.39721,-0.49776 1.60207,-0.31965 1.60207,-0.31965 0,0 0.79589,-1.97201 3.0491,-1.2786 1.71019,0.5263 2.01551,2.78552 2.01551,2.78552 0,0 0.35966,-1.72424 -0.10332,-2.42021 -0.57193,-0.85967 -3.97164,-1.37795 -3.40568,-1.42342 1.467,-0.11786997 3.02183,0.0195 3.97416,0.92112 0.76134,0.72084 0.63818,1.94237 0.51679,2.9225 -0.0926,0.74743 -0.93024,2.1005604 -0.93024,2.1005604 0,0 1.7649,2.5188185 2.22224,3.9271182 0.39007,1.20117 0.41344,3.65314 0.41344,3.65314 l -2.5323,-5.3427194 c -0.50847,-1.0727694 -1.69816,-2.4730192 -3.30752,-3.7444692 -1.12263,-0.88692 -3.3376,-1.55956 -3.51422,-1.78089 z" id="path2-7"/>
+					  <path style="fill:#ffffff;stroke-width:0.269654" d="m 9.9532003,19.788097 c 0,0 4.4125977,0.284724 6.2727047,-0.07043 0.501905,-0.09582 0.698906,-1.348059 0.698906,-1.348059 0,0 0.206867,-0.893469 0.210337,-0.635044 0.01316,0.878033 -0.227887,3.963023 -0.862623,4.865158 -0.670867,0.953443 -1.967193,1.267429 -3.121792,1.441032 -1.081285,0.16258 -2.119951,-0.10843 -3.1683918,-0.418365 C 9.3739825,23.442535 9.044651,23.024311 9.044651,23.024311 l 0.7663313,-2.009755 c 0,0 2.2158557,1.074953 3.0135927,0.887898 2.72227,-0.63834 2.562665,-1.441033 2.562665,-1.441033 0,0 -2.804092,-0.478591 -3.913877,-0.04111 -1.157741,0.456413 -2.4287323,2.586328 -2.4287323,2.586328 z" id="path4"/>
+					</g>
+					<g xmlns="http://www.w3.org/2000/svg" id="layer3">
+					  <path style="display:inline;fill:#ffcc00;stroke-width:0.264583" d="m 23.626018,11.82621 c -3.51614,2.14622 -4.83764,-0.63123 -4.83764,-0.63123 l -1.07311,1.43842 2.73986,2.35171 z" id="path8"/>
+					</g>
+				  </svg>
+				  
+				  
+			</h1>
+		</div>
+		<style>
+			.gradient-text {
+				background: linear-gradient(90deg, #caad29, #ce6b1f, #ffcc00); /* Gradiente suave */
+				background-size: 200%;
+				animation: gradient 5s ease infinite;
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+			}
+
+			.gradient-button:hover {
+				color: white; /* Color del texto en hover */
+			}
+
+			@keyframes gradient {
+				0% { background-position: 0% 50%; }
+				50% { background-position: 100% 50%; }
+				100% { background-position: 0% 50%; }
+			}
+		</style>
+
+		<h2 class="relative text-xl md:text-3xl font-Londona italic gradient-text mt-3 z-10 drop-shadow-md">
+			¡Toma lo que quieras, cuando quieras!
+		</h2>
+
+		<!-- Botones de llamada a la acción -->
+		<div class="relative flex mt-4 z-10 border-2 border-white rounded-full px-4">
+			<a href="#explorar" class="gradient-text font-bold py-1 rounded-full text-lg shadow-lg transition-all duration-300 ease-in-out pr-3" style="border-right: 2px solid white; border-radius: 0px;">
+				Explorar
+			</a>
+			<a href="#productos" class="gradient-text font-bold py-1 rounded-full text-lg shadow-lg transition-all duration-300 ease-in-out m-0 pl-3">
+				Ver Productos
+			</a>
+		</div>
+				
+
+		</header>
+		<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,196L26.7,196C53.3,196,107,196,160,228.7C213.3,261,267,327,320,326.7C373.3,327,427,261,480,269.5C533.3,278,587,359,640,351.2C693.3,343,747,245,800,179.7C853.3,114,907,82,960,98C1013.3,114,1067,180,1120,236.8C1173.3,294,1227,343,1280,310.3C1333.3,278,1387,163,1440,138.8C1493.3,114,1547,180,1600,179.7C1653.3,180,1707,114,1760,130.7C1813.3,147,1867,245,1920,302.2C1973.3,359,2027,376,2080,392C2133.3,408,2187,425,2240,375.7C2293.3,327,2347,212,2400,212.3C2453.3,212,2507,327,2560,326.7C2613.3,327,2667,212,2720,147C2773.3,82,2827,65,2880,106.2C2933.3,147,2987,245,3040,261.3C3093.3,278,3147,212,3200,171.5C3253.3,131,3307,114,3360,138.8C3413.3,163,3467,229,3520,277.7C3573.3,327,3627,359,3680,310.3C3733.3,261,3787,131,3813,65.3L3840,0L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,98L26.7,138.8C53.3,180,107,261,160,261.3C213.3,261,267,180,320,138.8C373.3,98,427,98,480,130.7C533.3,163,587,229,640,253.2C693.3,278,747,261,800,245C853.3,229,907,212,960,187.8C1013.3,163,1067,131,1120,122.5C1173.3,114,1227,131,1280,179.7C1333.3,229,1387,310,1440,318.5C1493.3,327,1547,261,1600,204.2C1653.3,147,1707,98,1760,98C1813.3,98,1867,147,1920,187.8C1973.3,229,2027,261,2080,285.8C2133.3,310,2187,327,2240,351.2C2293.3,376,2347,408,2400,359.3C2453.3,310,2507,180,2560,122.5C2613.3,65,2667,82,2720,81.7C2773.3,82,2827,65,2880,81.7C2933.3,98,2987,147,3040,212.3C3093.3,278,3147,359,3200,334.8C3253.3,310,3307,180,3360,114.3C3413.3,49,3467,49,3520,81.7C3573.3,114,3627,180,3680,236.8C3733.3,294,3787,343,3813,367.5L3840,392L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,294L26.7,277.7C53.3,261,107,229,160,220.5C213.3,212,267,229,320,269.5C373.3,310,427,376,480,367.5C533.3,359,587,278,640,204.2C693.3,131,747,65,800,57.2C853.3,49,907,98,960,106.2C1013.3,114,1067,82,1120,114.3C1173.3,147,1227,245,1280,261.3C1333.3,278,1387,212,1440,212.3C1493.3,212,1547,278,1600,310.3C1653.3,343,1707,343,1760,294C1813.3,245,1867,147,1920,138.8C1973.3,131,2027,212,2080,212.3C2133.3,212,2187,131,2240,130.7C2293.3,131,2347,212,2400,204.2C2453.3,196,2507,98,2560,89.8C2613.3,82,2667,163,2720,220.5C2773.3,278,2827,310,2880,277.7C2933.3,245,2987,147,3040,114.3C3093.3,82,3147,114,3200,138.8C3253.3,163,3307,180,3360,228.7C3413.3,278,3467,359,3520,326.7C3573.3,294,3627,147,3680,73.5C3733.3,0,3787,0,3813,0L3840,0L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,294L26.7,269.5C53.3,245,107,196,160,204.2C213.3,212,267,278,320,253.2C373.3,229,427,114,480,106.2C533.3,98,587,196,640,236.8C693.3,278,747,261,800,228.7C853.3,196,907,147,960,106.2C1013.3,65,1067,33,1120,49C1173.3,65,1227,131,1280,147C1333.3,163,1387,131,1440,98C1493.3,65,1547,33,1600,73.5C1653.3,114,1707,229,1760,228.7C1813.3,229,1867,114,1920,106.2C1973.3,98,2027,196,2080,228.7C2133.3,261,2187,229,2240,179.7C2293.3,131,2347,65,2400,65.3C2453.3,65,2507,131,2560,147C2613.3,163,2667,131,2720,130.7C2773.3,131,2827,163,2880,187.8C2933.3,212,2987,229,3040,261.3C3093.3,294,3147,343,3200,359.3C3253.3,376,3307,359,3360,359.3C3413.3,359,3467,376,3520,367.5C3573.3,359,3627,327,3680,285.8C3733.3,245,3787,196,3813,171.5L3840,147L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path></svg>
+		<div class="mx-5">
+			<div class="flex flex-col items-center justify-center bg-[#0a0a0a] max-w-6xl mx-auto">
+				<h1 class="text-4xl md:text-6xl font-Londona italic font-bold z-10 drop-shadow-lg text-center gradient-text w-full">
+					¡Descubre la magia de nuestros vasos! <br>¡No te quedes sin el tuyo!
+				</h1>
+				
+				<style>
+					.gradient-text {
+						background: linear-gradient(90deg, #ffeb3b, #f39c21, #ffeb3b);
+						background-size: 200%;
+						animation: gradient 5s ease infinite;
+						-webkit-background-clip: text;
+						background-clip: text;
+						color: transparent;
+					}
+				
+					@keyframes gradient {
+						0% { background-position: 0% 50%; }
+						50% { background-position: 100% 50%; }
+						100% { background-position: 0% 50%; }
+					}
+				</style>
+				
+				
+				<p class="text-lg text-center mt-12 max-w-6xl font-Cocogoose" style="rgba(245, 245, 245, 0.753); color: rgba(253, 253, 253, 0.596);">
+					El <span class="text-white transition-all duration-300">Arrimón</span> es un producto creativo y divertido, diseñado para jóvenes que disfrutan de la 
+					<span class="text-white transition-all duration-300">fiesta y el buen rollo</span>. Se trata de un vaso con forma de 
+					<span class="text-white transition-all duration-300">diferentes bestias</span>, cuyo propósito es llevar alcohol y tener siempre un recipiente donde echarlo cuando y donde quieras. 
+				</p>
+				
+				<!-- Botón separado -->
+				<p class="font-Cocogoose text-center text-white text-2xl mt-8 border-2 border-gradient-to-r from-yellow-400 to-orange-500 rounded-full px-5 py-2 flex flex-row justify-center items-center self-center transition-all duration-300 hover:shadow-lg hover:bg-[#ce6b1f] hover:text-black hover:scale-105">
+					¡Perfecto para disfrutar al máximo! 
+				</p>
+			
+				<img src="/assets/chupito.webp" class="mt-5 border border-[#ce6b1f] rounded">
+			
+			</div>
+			
+			
+		</div>
+		<div class="mx-5" style="margin-top:4.5rem;">
+			<div class="flex flex-col items-center justify-center bg-[#0a0a0a] max-w-8xl mx-auto">
+				<h1 class="text-4xl md:text-6xl font-Londona italic font-bold z-10 drop-shadow-lg text-center gradient-text w-full">
+					¡Nuestras especialidades!</h1>
+				<div class="w-full gap-4 flex-wrap flex justify-center items-center mt-6 relative">
+					<!-- Card 1 -->
+					<div class="card w-96 h-96 p-2 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl border-2 cursor-pointer">
+						<img class="w-full h-72 object-cover rounded-xl" src="/assets/rinoceronte.jpeg" alt="">
+						<div class="p-2">
+							<h2 class="font-bold text-4xl text-white mb-2 text-center">El rinoce<span class="text-[#1d45bd] underline">ron</span>te</h2>
+						</div>
+					</div>
+					
+					<!-- Card 2 -->
+					<div class="card w-96 h-96 p-2 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl border-2 cursor-pointer">
+						<img class="w-full h-72 object-cover rounded-xl" src="/assets/Snail.jpg" alt="">
+						<div class="p-2">
+							<h2 class="font-bold text-4xl text-white mb-2 text-center">El <span class="text-[#72b374] underline">Vodka</span>racol</h2>
+						</div>
+					</div>
+					
+					<!-- Card 3 -->
+					<div class="card w-96 h-96 p-2 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl border-2 cursor-pointer">
+						<img class="w-full h-72 object-cover rounded-xl" src="/assets/Giraffa_camelopardalis_angolensis.jpg" alt="">
+						<div class="p-2">
+							<h2 class="font-bold text-4xl text-white mb-2 text-center">El <span class="text-[#1d45bd] underline">Ginebra</span>rafa</h2>
+						</div>
+					</div>
+					
+					<!-- Card 4 -->
+					<div class="card w-96 h-96 p-2 bg-gradient-to-r from-yellow-500 to-red-500 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl border-2 cursor-pointer">
+						<img class="w-full h-72 object-cover rounded-xl" src="/assets/Pinguino-rey-Animales-Faunia-3.jpg" alt="">
+						<div class="p-2">
+							<h2 class="font-bold text-4xl text-white mb-2 text-center">El Pin<span class="text-[#72b374] underline">whisky</span></h2>
+						</div>
+					</div>
+				</div>
+
+				<p id="price" class="rounded-full font-Cocogoose text-white text-2xl mt-8 px-5 py-1 flex flex-row justify-center items-center transition-all duration-300 hover:shadow-lg hover:bg-[#ce6b1f] hover:text-black hover:scale-105">
+					¡Todo por 
+					<span class="ml-1 font-Coolvetica text-5xl text-yellow-500 transition-all duration-300">
+						15€!
+					</span>
+				</p>
+				
+				<script>
+					const cards = document.querySelectorAll('.card');
+					const priceSpan = document.getElementById('price');
+				
+					cards.forEach(card => {
+						card.addEventListener('mouseenter', () => {
+							cards.forEach(otherCard => {
+								if (otherCard !== card) {
+									otherCard.classList.add('darkened'); // Oscurecer las otras tarjetas
+								}
+							});
+							priceSpan.classList.add('text-black', 'bg-[#ce6b1f]'); // Cambiar estilo del span
+						});
+				
+						card.addEventListener('mouseleave', () => {
+							cards.forEach(otherCard => {
+								otherCard.classList.remove('darkened'); // Quitar el efecto de oscurecimiento
+							});
+							priceSpan.classList.remove('text-black', 'bg-[#ce6b1f]'); // Restaurar estilo del span
+						});
+					});
+				</script>
+				
+				<style>
+					.darkened {
+						filter: brightness(0.5); /* Ajusta este valor según el efecto que desees */
+					}
+				  /* Cambiar el color del span al hacer hover en el p */
+				  p:hover span {
+					color: white;
+				  }
+				</style>
+			</div>
+	</div>
+	<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,196L160,196L320,392L480,196L640,441L800,147L960,49L1120,245L1280,392L1440,49L1600,245L1760,49L1920,343L2080,392L2240,441L2400,98L2560,441L2720,98L2880,49L3040,343L3200,147L3360,98L3520,294L3680,392L3840,0L3840,490L3680,490L3520,490L3360,490L3200,490L3040,490L2880,490L2720,490L2560,490L2400,490L2240,490L2080,490L1920,490L1760,490L1600,490L1440,490L1280,490L1120,490L960,490L800,490L640,490L480,490L320,490L160,490L0,490Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,98L160,343L320,98L480,98L640,294L800,245L960,196L1120,98L1280,147L1440,392L1600,196L1760,49L1920,196L2080,294L2240,343L2400,441L2560,49L2720,98L2880,49L3040,196L3200,441L3360,49L3520,49L3680,245L3840,392L3840,490L3680,490L3520,490L3360,490L3200,490L3040,490L2880,490L2720,490L2560,490L2400,490L2240,490L2080,490L1920,490L1760,490L1600,490L1440,490L1280,490L1120,490L960,490L800,490L640,490L480,490L320,490L160,490L0,490Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,294L160,196L320,245L480,441L640,196L800,0L960,147L1120,49L1280,343L1440,147L1600,343L1760,343L1920,49L2080,294L2240,49L2400,294L2560,0L2720,245L2880,343L3040,49L3200,147L3360,196L3520,441L3680,0L3840,0L3840,490L3680,490L3520,490L3360,490L3200,490L3040,490L2880,490L2720,490L2560,490L2400,490L2240,490L2080,490L1920,490L1760,490L1600,490L1440,490L1280,490L1120,490L960,490L800,490L640,490L480,490L320,490L160,490L0,490Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,294L160,147L320,343L480,0L640,294L800,245L960,98L1120,0L1280,196L1440,98L1600,0L1760,343L1920,0L2080,294L2240,196L2400,0L2560,196L2720,98L2880,196L3040,245L3200,392L3360,343L3520,392L3680,294L3840,147L3840,490L3680,490L3520,490L3360,490L3200,490L3040,490L2880,490L2720,490L2560,490L2400,490L2240,490L2080,490L1920,490L1760,490L1600,490L1440,490L1280,490L1120,490L960,490L800,490L640,490L480,490L320,490L160,490L0,490Z"></path></svg>
+				
+		<div class="bg-[rgba(246,130,46,1)] border-t border-[#f0d700] pt-0 pb-0" style="margin-top: -5px;">
+			<style>
+				.highlight-text {
+					background: linear-gradient(90deg, #3b3b3b, #000000, #3b3b3b);
+					background-size: 200%;
+					animation: gradient 8s ease infinite;
+					-webkit-background-clip: text;
+					background-clip: text;
+					color: transparent;
+				}
+			
+				@keyframes gradient {
+					0% {
+						background-position: 0% 50%;
+					}
+					100% {
+						background-position: 100% 50%;
+					}
+				}
+			</style>
+			
+			<h1 class="text-4xl md:text-7xl font-Londona italic font-bold z-10 drop-shadow-lg text-center highlight-text">
+				¿Quieres colaborar?
+			</h1>
+			
+			                                                
+			<section class="py-12">
+				<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="grid lg:grid-cols-2 grid-cols-1 gap-x-24">
+					<div class="flex items-center lg:mb-0 mb-10">
+						<div class="">
+							<div class="text-center md:text-left ml-2">
+								<h2 class="text-gray-900 font-manrope text-2xl font-semibold underline decoration-2 decoration-wavy">¿Tienes una idea?</h2>
+								
+								<style>
+									.underline-effect {
+										background: linear-gradient(
+											to bottom, 
+											transparent 50%,
+											#fce041 50%
+										);
+									}
+								</style>
+								
+								<span class="underline-effect text-gray-900 font-manrope text-4xl font-semibold">¡Haznosla llegar!</span>
+								
+								
+							</div>
+							
+							<form action="" class="mt-3">
+								<input type="text" class="w-full h-14 shadow-sm text-white placeholder-text-200 text-lg font-normal leading-7 rounded-full  focus:outline-none py-2 px-4 mb-8 bg-black" placeholder="Nombre">
+								<input type="email" class="w-full h-14 shadow-sm text-white placeholder-text-200 text-lg font-normal leading-7 rounded-full focus:outline-none py-2 px-4 mb-8 bg-black" placeholder="Email">
+								<textarea name="" id="text" class="w-full h-48 shadow-sm resize-none text-white placeholder-text-200 text-lg font-normal leading-7 rounded-2xl focus:outline-none px-4 py-4 mb-8 bg-black" placeholder="Teléfono"></textarea>
+							<button class="w-full h-12 text-center text-black text-base font-semibold leading-6 rounded-full bg-yellow-300 shadow transition-all duration-700 hover:bg-black hover:text-white">Enviar</button>
+							</form>
+						</div>
+					</div>
+					<div class="lg:max-w-xl w-full h-[600px] flex items-center justify-center bg-cover bg-no-repeat bg-[#141205] rounded">
+						<div class="">
+							<div class="lg:w-96 w-auto h-auto bg-[black] shadow-xl lg:p-6 p-4">
+								<div class="flex flex-col justify-end items-end">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16mm" height="25mm" viewBox="0 0 29 32" version="1.1" id="svg1" xml:space="preserve" inkscape:export-filename="dibujo.svg" inkscape:export-xdpi="96" inkscape:export-ydpi="96">
+									<sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:document-units="mm" inkscape:zoom="4.0970529" inkscape:cx="-25.017983" inkscape:cy="99.461737" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="1042" inkscape:window-y="459" inkscape:window-maximized="1" inkscape:current-layer="layer1"/>
+									<defs id="defs1"/>
+									<g xmlns="http://www.w3.org/2000/svg" id="layer1">
+									  <path style="display:inline;fill:#e3dbdb;stroke-width:0.264583" d="m 20.546448,9.1172606 c 0,0 -3.0595,3.5617994 -2.87684,3.6074694 0.18266,0.0457 2.73985,2.23754 2.73985,2.23754 0,0 3.46915,-3.0925 3.19095,-3.15083 -0.50379,-0.10563 -3.05396,-2.6941794 -3.05396,-2.6941794 z" id="path5"/>
+									  <path style="display:inline;fill:#ffffff;stroke-width:0.264583" d="m 11.582908,3.9932614 c -0.60364,0.8085 -2.6801996,0.68309 -2.51858,1.67905 0.11794,0.7268 1.45318,-0.0252 2.1311,0.58121 0.81508,0.7291304 -1.16287,0.329 -3.2289496,0.5812104 -1.02743,0.12542 2.7768996,0.8395297 2.7768996,0.8395297 0,0 -2.2205496,0.18729 -3.8512296,0.8584394 -1.1431828,0.4704997 4.0416796,0.0228 2.9471296,0.4977197 -1.7708696,0.7684397 -2.0000396,0.8257497 -2.7801496,1.6066394 -0.27854,0.27881 -0.866071,1.90954 1.10109,1.9452 C 9.370508,12.60416 9.615288,11.78111 9.158898,11.70815 8.4329784,11.59211 7.8373284,11.2261 7.8373284,11.2261 c 0,0 -0.0337,-0.74221 1.1624196,-0.77495 0.64555,-0.0177 0.85943,0.48729 1.96087,1.39074 0.34637,0.28411 -0.25796,0.86542 -0.47558,1.257 -1.06551,1.91723 -1.08103,2.04803 -1.09784,3.16437 -0.0367,2.43751 0.71037,3.55184 0.71037,3.55184 l -0.97652,3.51403 c 0,0 0.0716,0.97566 2.07436,2.49183 0.55588,0.42082 -2.4125896,-0.92813 -2.06652,-0.32289 0.54092,0.946 3.25382,0.34889 4.06847,1.54989 0.71803,1.05856 0.21729,3.88257 0.21729,3.88257 -1.3631,-0.59004 -3.65438,-1.50975 -5.1252396,-2.46183 -1.75846,-1.13824 -4.8434199,-4.0039 -4.8434199,-4.0039 0,0 -2.64162596,-2.91871 -2.64773896,-5.03715 -0.0024,-0.84068 3.37107696,4.66813 2.90605296,3.0352 -0.06759,-0.23735 -2.15779,-4.20278 -2.066527,-6.78078 0.07493,-2.11654 0.353679,-3.36224 1.066504,-4.79182 0.931151,-1.8674494 3.3520869,-4.4533886 5.1330789,-5.5408086 1.1333096,-0.69196 4.2448096,-2.0248 3.7455996,-1.35618 z" id="path3"/>
+									  <path style="display:inline;fill:#ffffff;stroke-width:0.264583" d="m 8.6637984,3.6564714 c 0.3509696,-0.49776 -1.4156,-0.31965 -1.4156,-0.31965 0,0 -0.70325,-1.97201 -2.6941789,-1.2786 -1.51112,0.5263 -1.780905,2.78552 -1.780905,2.78552 0,0 -0.317789,-1.72424 0.09133,-2.42021 0.505351,-0.85967 3.5093269,-1.37795 3.0092491,-1.42342 -1.2962371,-0.11786997 -2.6700851,0.0195 -3.5115551,0.92112 -0.672726,0.72084 -0.563898,1.94237 -0.456643,2.9225 0.08179,0.74743 0.821956,2.1005604 0.821956,2.1005604 0,0 -1.55946,2.5188188 -1.96356196,3.9271182 -0.344665,1.20117 -0.365315,3.65314 -0.365315,3.65314 L 2.6361185,9.1818306 c 0.449277,-1.0727694 1.500493,-2.4730192 2.9225091,-3.7444692 0.9919508,-0.88692 2.9491108,-1.55956 3.1051708,-1.78089 z" id="path2"/>
+									  <path style="display:inline;fill:#ffffff;stroke-width:0.281471" d="m 18.965358,3.7283414 c -0.39721,-0.49776 1.60207,-0.31965 1.60207,-0.31965 0,0 0.79589,-1.97201 3.0491,-1.2786 1.71019,0.5263 2.01551,2.78552 2.01551,2.78552 0,0 0.35966,-1.72424 -0.10332,-2.42021 -0.57193,-0.85967 -3.97164,-1.37795 -3.40568,-1.42342 1.467,-0.11786997 3.02183,0.0195 3.97416,0.92112 0.76134,0.72084 0.63818,1.94237 0.51679,2.9225 -0.0926,0.74743 -0.93024,2.1005604 -0.93024,2.1005604 0,0 1.7649,2.5188185 2.22224,3.9271182 0.39007,1.20117 0.41344,3.65314 0.41344,3.65314 l -2.5323,-5.3427194 c -0.50847,-1.0727694 -1.69816,-2.4730192 -3.30752,-3.7444692 -1.12263,-0.88692 -3.3376,-1.55956 -3.51422,-1.78089 z" id="path2-7"/>
+									  <path style="fill:#ffffff;stroke-width:0.269654" d="m 9.9532003,19.788097 c 0,0 4.4125977,0.284724 6.2727047,-0.07043 0.501905,-0.09582 0.698906,-1.348059 0.698906,-1.348059 0,0 0.206867,-0.893469 0.210337,-0.635044 0.01316,0.878033 -0.227887,3.963023 -0.862623,4.865158 -0.670867,0.953443 -1.967193,1.267429 -3.121792,1.441032 -1.081285,0.16258 -2.119951,-0.10843 -3.1683918,-0.418365 C 9.3739825,23.442535 9.044651,23.024311 9.044651,23.024311 l 0.7663313,-2.009755 c 0,0 2.2158557,1.074953 3.0135927,0.887898 2.72227,-0.63834 2.562665,-1.441033 2.562665,-1.441033 0,0 -2.804092,-0.478591 -3.913877,-0.04111 -1.157741,0.456413 -2.4287323,2.586328 -2.4287323,2.586328 z" id="path4"/>
+									</g>
+									<g xmlns="http://www.w3.org/2000/svg" id="layer3">
+									  <path style="display:inline;fill:#ffcc00;stroke-width:0.264583" d="m 23.626018,11.82621 c -3.51614,2.14622 -4.83764,-0.63123 -4.83764,-0.63123 l -1.07311,1.43842 2.73986,2.35171 z" id="path8"/>
+									</g>
+								</svg>
+							</div>
+
+								<a href="javascript:;" class="flex items-center mb-6">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<h5 class="text-white text-base font-normal leading-6 ml-5">+34 682-714-572</h5>
+								</a>
+								<a href="javascript:;" class="flex items-center mb-6">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+									</svg>
+									<h5 class="text-white text-base font-normal leading-6 ml-5">Arrimon.business@gmail.com</h5>
+								</a>
+								<a href="javascript:;" class="flex items-center mb-6">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+										<path d="M25 12.9169C25 17.716 21.1939 21.5832 18.2779 24.9828C16.8385 26.6609 16.1188 27.5 15 27.5C13.8812 27.5 13.1615 26.6609 11.7221 24.9828C8.80612 21.5832 5 17.716 5 12.9169C5 10.1542 6.05357 7.5046 7.92893 5.55105C9.8043 3.59749 12.3478 2.5 15 2.5C17.6522 2.5 20.1957 3.59749 22.0711 5.55105C23.9464 7.5046 25 10.1542 25 12.9169Z" stroke="#000000" stroke-width="2"></path>
+										<path d="M17.5 11.6148C17.5 13.0531 16.3807 14.219 15 14.219C13.6193 14.219 12.5 13.0531 12.5 11.6148C12.5 10.1765 13.6193 9.01058 15 9.01058C16.3807 9.01058 17.5 10.1765 17.5 11.6148Z" stroke="#000000" stroke-width="2"></path>
+									</svg>
+									<h5 class="text-white text-base font-normal leading-6 ml-5">C/ de Móstoles, 64, 28941 Fuenlabrada, Madrid</h5>
+								</a>
+								<div class="flex items-center justify-center border-t border-gray-100 pt-6">
+									<a href="javascript:;" class="mr-6">
+										<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="0.0683594" width="30" height="30" rx="15" fill="#337FFF"></rect>
+											<path d="M18.5094 15.937L18.9369 13.2236H16.3038V11.4599C16.3038 10.7179 16.6714 9.99293 17.8469 9.99293H19.0608V7.68231C18.3539 7.56968 17.6396 7.50874 16.9236 7.5C14.7565 7.5 13.3417 8.80158 13.3417 11.1546V13.2236H10.9395V15.937H13.3417V22.5H16.3038V15.937H18.5094Z" fill="white"></path>
+										</svg>
+									</a>
+									<a href="javascript:;" class="mr-6">
+										<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="0.0683594" width="30" height="30" rx="15" fill="url(#paint0_linear_11773_24443)"></rect>
+											<path d="M12.2692 14.9998C12.2692 13.4919 13.492 12.2692 15.0008 12.2692C16.5096 12.2692 17.733 13.4919 17.733 14.9998C17.733 16.5077 16.5096 17.7304 15.0008 17.7304C13.492 17.7304 12.2692 16.5077 12.2692 14.9998ZM10.7922 14.9998C10.7922 17.3228 12.6764 19.2059 15.0008 19.2059C17.3252 19.2059 19.2094 17.3228 19.2094 14.9998C19.2094 12.6768 17.3252 10.7937 15.0008 10.7937C12.6764 10.7937 10.7922 12.6768 10.7922 14.9998ZM18.3925 10.6269C18.3924 10.8213 18.45 11.0114 18.558 11.1731C18.666 11.3348 18.8196 11.4608 18.9993 11.5353C19.1789 11.6098 19.3767 11.6293 19.5675 11.5915C19.7583 11.5536 19.9336 11.4601 20.0712 11.3226C20.2088 11.1852 20.3025 11.0101 20.3406 10.8195C20.3786 10.6288 20.3592 10.4312 20.2848 10.2515C20.2104 10.0719 20.0844 9.91833 19.9227 9.81026C19.7611 9.70219 19.5709 9.64446 19.3764 9.64438H19.376C19.1153 9.6445 18.8652 9.74805 18.6808 9.93228C18.4964 10.1165 18.3927 10.3663 18.3925 10.6269ZM11.6896 21.6672C10.8905 21.6308 10.4561 21.4978 10.1675 21.3854C9.78486 21.2366 9.51183 21.0592 9.22477 20.7727C8.93771 20.4862 8.76002 20.2136 8.6117 19.8312C8.49918 19.5429 8.36608 19.1087 8.32975 18.3101C8.29002 17.4467 8.28208 17.1873 8.28208 14.9998C8.28208 12.8124 8.29067 12.5538 8.32975 11.6896C8.36614 10.891 8.50023 10.4577 8.6117 10.1685C8.76067 9.78606 8.9381 9.51319 9.22477 9.22631C9.51143 8.93942 9.7842 8.76183 10.1675 8.6136C10.456 8.50116 10.8905 8.36813 11.6896 8.33183C12.5535 8.29212 12.813 8.28419 15.0008 8.28419C17.1886 8.28419 17.4483 8.29277 18.313 8.33183C19.1121 8.3682 19.5457 8.5022 19.835 8.6136C20.2177 8.76183 20.4907 8.93981 20.7778 9.22631C21.0649 9.5128 21.2419 9.78606 21.3909 10.1685C21.5034 10.4568 21.6365 10.891 21.6728 11.6896C21.7125 12.5538 21.7205 12.8124 21.7205 14.9998C21.7205 17.1873 21.7125 17.4459 21.6728 18.3101C21.6364 19.1087 21.5027 19.5427 21.3909 19.8312C21.2419 20.2136 21.0645 20.4865 20.7778 20.7727C20.4911 21.059 20.2177 21.2366 19.835 21.3854C19.5465 21.4979 19.1121 21.6309 18.313 21.6672C17.4491 21.7069 17.1895 21.7149 15.0008 21.7149C12.812 21.7149 12.5532 21.7069 11.6896 21.6672ZM11.6217 6.8582C10.7492 6.89791 10.153 7.03618 9.63228 7.23866C9.09304 7.44777 8.63655 7.7283 8.18039 8.18347C7.72422 8.63864 7.44425 9.09557 7.23502 9.63449C7.03241 10.1552 6.89406 10.7507 6.85432 11.6227C6.81393 12.4961 6.80469 12.7753 6.80469 14.9998C6.80469 17.2242 6.81393 17.5035 6.85432 18.3768C6.89406 19.2489 7.03241 19.8444 7.23502 20.3651C7.44425 20.9037 7.72429 21.3611 8.18039 21.8161C8.63648 22.2711 9.09304 22.5512 9.63228 22.7609C10.1539 22.9634 10.7492 23.1017 11.6217 23.1414C12.4961 23.1811 12.775 23.191 15.0008 23.191C17.2266 23.191 17.506 23.1817 18.3799 23.1414C19.2525 23.1017 19.8483 22.9634 20.3693 22.7609C20.9082 22.5512 21.365 22.2713 21.8212 21.8161C22.2774 21.3609 22.5567 20.9037 22.7666 20.3651C22.9692 19.8444 23.1082 19.2488 23.1473 18.3768C23.187 17.5028 23.1962 17.2242 23.1962 14.9998C23.1962 12.7753 23.187 12.4961 23.1473 11.6227C23.1075 10.7507 22.9692 10.1549 22.7666 9.63449C22.5567 9.0959 22.2766 8.63936 21.8212 8.18347C21.3658 7.72758 20.9082 7.44777 20.37 7.23866C19.8483 7.03618 19.2524 6.89726 18.3805 6.8582C17.5066 6.81849 17.2272 6.80859 15.0014 6.80859C12.7756 6.80859 12.4961 6.81783 11.6217 6.8582Z" fill="white"></path>
+											<defs>
+												<linearGradient id="paint0_linear_11773_24443" x1="29.4918" y1="30" x2="-0.50824" y2="-8.07516e-07" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FBE18A"></stop>
+												<stop offset="0.21" stop-color="#FCBB45"></stop>
+												<stop offset="0.38" stop-color="#F75274"></stop>
+												<stop offset="0.52" stop-color="#D53692"></stop>
+												<stop offset="0.74" stop-color="#8F39CE"></stop>
+												<stop offset="1" stop-color="#5B4FE9"></stop>
+												</linearGradient>
+											</defs>
+										</svg>
+									</a>
+									<a href="javascript:;" class="mr-6">
+										<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="0.884766" width="30" height="30" rx="15" fill="#33CCFF"></rect>
+											<path d="M23.5888 10.2039C23.0935 10.4171 22.5727 10.5655 22.0394 10.6456C22.2888 10.6028 22.6556 10.154 22.8017 9.97236C23.0235 9.69835 23.1926 9.38555 23.3003 9.04985C23.3003 9.02491 23.3253 8.9893 23.3003 8.97149C23.2878 8.96463 23.2737 8.96103 23.2594 8.96103C23.2451 8.96103 23.231 8.96463 23.2184 8.97149C22.6393 9.28508 22.023 9.52442 21.3841 9.68385C21.3618 9.69066 21.3381 9.69127 21.3155 9.68562C21.2929 9.67997 21.2723 9.66828 21.2558 9.6518C21.2061 9.59257 21.1526 9.53665 21.0956 9.48439C20.8349 9.25089 20.5393 9.05979 20.2193 8.91806C19.7875 8.74088 19.321 8.66415 18.8552 8.69366C18.4031 8.72221 17.9618 8.84345 17.5586 9.04985C17.1616 9.26745 16.8127 9.56306 16.5328 9.91894C16.2384 10.2852 16.0259 10.7103 15.9095 11.1656C15.8135 11.5986 15.8027 12.0462 15.8775 12.4835C15.8775 12.5583 15.8775 12.5689 15.8133 12.5583C13.2738 12.1843 11.1901 11.2831 9.48752 9.34904C9.41272 9.26356 9.37354 9.26356 9.31299 9.34904C8.57213 10.4746 8.93187 12.2555 9.85795 13.1353C9.98261 13.2528 10.1108 13.3668 10.2462 13.4737C9.82159 13.4435 9.40736 13.3284 9.02804 13.1353C8.9568 13.089 8.91762 13.1139 8.91406 13.1994C8.90397 13.3179 8.90397 13.4371 8.91406 13.5556C8.98838 14.1235 9.21222 14.6616 9.56267 15.1147C9.91313 15.5678 10.3776 15.9197 10.9087 16.1343C11.0381 16.1898 11.173 16.2316 11.3112 16.259C10.9181 16.3364 10.515 16.3484 10.118 16.2946C10.0325 16.2768 10.0004 16.3231 10.0325 16.405C10.5561 17.8298 11.6923 18.2643 12.5258 18.5065C12.6397 18.5243 12.7537 18.5243 12.882 18.5528C12.882 18.5528 12.882 18.5528 12.8606 18.5742C12.6148 19.023 11.6211 19.3258 11.1651 19.4825C10.333 19.7814 9.44574 19.8956 8.565 19.8173C8.42609 19.7959 8.39403 19.7995 8.35842 19.8173C8.3228 19.8351 8.35842 19.8743 8.3976 19.9099C8.57569 20.0274 8.75378 20.1307 8.939 20.2305C9.49038 20.5312 10.0733 20.7701 10.6772 20.9428C13.8045 21.8048 17.3236 21.1708 19.6708 18.8378C21.5158 17.007 22.1641 14.4817 22.1641 11.9527C22.1641 11.8566 22.2816 11.7996 22.3493 11.7497C22.8161 11.386 23.2276 10.9565 23.571 10.4746C23.6305 10.4027 23.661 10.3113 23.6565 10.2181C23.6565 10.1647 23.6565 10.1754 23.5888 10.2039Z" fill="white"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+			<div class="p-4 mt-20">
+			<footer class="bg-secondary border-t border-black max-w-7xl mx-auto">
+				<div class="mx-auto w-full max-w-screen-xl py-6 lg:py-8">
+					<div class="md:flex md:justify-between">
+					  <div class="mb-6 md:mb-0 flex items-center justify-center">
+						  <a href="/" class="flex items-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="19mm" height="25mm" viewBox="0 0 29 32" version="1.1" id="svg1" xml:space="preserve" inkscape:export-filename="dibujo.svg" inkscape:export-xdpi="96" inkscape:export-ydpi="96">
+								<sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:document-units="mm" inkscape:zoom="4.0970529" inkscape:cx="-25.017983" inkscape:cy="99.461737" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="1042" inkscape:window-y="459" inkscape:window-maximized="1" inkscape:current-layer="layer1"/>
+								<defs id="defs1"/>
+								<g xmlns="http://www.w3.org/2000/svg" id="layer1">
+								  <path style="display:inline;fill:#e3dbdb;stroke-width:0.264583" d="m 20.546448,9.1172606 c 0,0 -3.0595,3.5617994 -2.87684,3.6074694 0.18266,0.0457 2.73985,2.23754 2.73985,2.23754 0,0 3.46915,-3.0925 3.19095,-3.15083 -0.50379,-0.10563 -3.05396,-2.6941794 -3.05396,-2.6941794 z" id="path5"/>
+								  <path style="display:inline;fill:#000000;stroke-width:0.264583" d="m 11.582908,3.9932614 c -0.60364,0.8085 -2.6801996,0.68309 -2.51858,1.67905 0.11794,0.7268 1.45318,-0.0252 2.1311,0.58121 0.81508,0.7291304 -1.16287,0.329 -3.2289496,0.5812104 -1.02743,0.12542 2.7768996,0.8395297 2.7768996,0.8395297 0,0 -2.2205496,0.18729 -3.8512296,0.8584394 -1.1431828,0.4704997 4.0416796,0.0228 2.9471296,0.4977197 -1.7708696,0.7684397 -2.0000396,0.8257497 -2.7801496,1.6066394 -0.27854,0.27881 -0.866071,1.90954 1.10109,1.9452 C 9.370508,12.60416 9.615288,11.78111 9.158898,11.70815 8.4329784,11.59211 7.8373284,11.2261 7.8373284,11.2261 c 0,0 -0.0337,-0.74221 1.1624196,-0.77495 0.64555,-0.0177 0.85943,0.48729 1.96087,1.39074 0.34637,0.28411 -0.25796,0.86542 -0.47558,1.257 -1.06551,1.91723 -1.08103,2.04803 -1.09784,3.16437 -0.0367,2.43751 0.71037,3.55184 0.71037,3.55184 l -0.97652,3.51403 c 0,0 0.0716,0.97566 2.07436,2.49183 0.55588,0.42082 -2.4125896,-0.92813 -2.06652,-0.32289 0.54092,0.946 3.25382,0.34889 4.06847,1.54989 0.71803,1.05856 0.21729,3.88257 0.21729,3.88257 -1.3631,-0.59004 -3.65438,-1.50975 -5.1252396,-2.46183 -1.75846,-1.13824 -4.8434199,-4.0039 -4.8434199,-4.0039 0,0 -2.64162596,-2.91871 -2.64773896,-5.03715 -0.0024,-0.84068 3.37107696,4.66813 2.90605296,3.0352 -0.06759,-0.23735 -2.15779,-4.20278 -2.066527,-6.78078 0.07493,-2.11654 0.353679,-3.36224 1.066504,-4.79182 0.931151,-1.8674494 3.3520869,-4.4533886 5.1330789,-5.5408086 1.1333096,-0.69196 4.2448096,-2.0248 3.7455996,-1.35618 z" id="path3"/>
+								  <path style="display:inline;fill:#000000;stroke-width:0.264583" d="m 8.6637984,3.6564714 c 0.3509696,-0.49776 -1.4156,-0.31965 -1.4156,-0.31965 0,0 -0.70325,-1.97201 -2.6941789,-1.2786 -1.51112,0.5263 -1.780905,2.78552 -1.780905,2.78552 0,0 -0.317789,-1.72424 0.09133,-2.42021 0.505351,-0.85967 3.5093269,-1.37795 3.0092491,-1.42342 -1.2962371,-0.11786997 -2.6700851,0.0195 -3.5115551,0.92112 -0.672726,0.72084 -0.563898,1.94237 -0.456643,2.9225 0.08179,0.74743 0.821956,2.1005604 0.821956,2.1005604 0,0 -1.55946,2.5188188 -1.96356196,3.9271182 -0.344665,1.20117 -0.365315,3.65314 -0.365315,3.65314 L 2.6361185,9.1818306 c 0.449277,-1.0727694 1.500493,-2.4730192 2.9225091,-3.7444692 0.9919508,-0.88692 2.9491108,-1.55956 3.1051708,-1.78089 z" id="path2"/>
+								  <path style="display:inline;fill:#000000;stroke-width:0.281471" d="m 18.965358,3.7283414 c -0.39721,-0.49776 1.60207,-0.31965 1.60207,-0.31965 0,0 0.79589,-1.97201 3.0491,-1.2786 1.71019,0.5263 2.01551,2.78552 2.01551,2.78552 0,0 0.35966,-1.72424 -0.10332,-2.42021 -0.57193,-0.85967 -3.97164,-1.37795 -3.40568,-1.42342 1.467,-0.11786997 3.02183,0.0195 3.97416,0.92112 0.76134,0.72084 0.63818,1.94237 0.51679,2.9225 -0.0926,0.74743 -0.93024,2.1005604 -0.93024,2.1005604 0,0 1.7649,2.5188185 2.22224,3.9271182 0.39007,1.20117 0.41344,3.65314 0.41344,3.65314 l -2.5323,-5.3427194 c -0.50847,-1.0727694 -1.69816,-2.4730192 -3.30752,-3.7444692 -1.12263,-0.88692 -3.3376,-1.55956 -3.51422,-1.78089 z" id="path2-7"/>
+								  <path style="fill:#000000;stroke-width:0.269654" d="m 9.9532003,19.788097 c 0,0 4.4125977,0.284724 6.2727047,-0.07043 0.501905,-0.09582 0.698906,-1.348059 0.698906,-1.348059 0,0 0.206867,-0.893469 0.210337,-0.635044 0.01316,0.878033 -0.227887,3.963023 -0.862623,4.865158 -0.670867,0.953443 -1.967193,1.267429 -3.121792,1.441032 -1.081285,0.16258 -2.119951,-0.10843 -3.1683918,-0.418365 C 9.3739825,23.442535 9.044651,23.024311 9.044651,23.024311 l 0.7663313,-2.009755 c 0,0 2.2158557,1.074953 3.0135927,0.887898 2.72227,-0.63834 2.562665,-1.441033 2.562665,-1.441033 0,0 -2.804092,-0.478591 -3.913877,-0.04111 -1.157741,0.456413 -2.4287323,2.586328 -2.4287323,2.586328 z" id="path4"/>
+								</g>
+								<g xmlns="http://www.w3.org/2000/svg" id="layer3">
+								  <path style="display:inline;fill:#ffcc00;stroke-width:0.264583" d="m 23.626018,11.82621 c -3.51614,2.14622 -4.83764,-0.63123 -4.83764,-0.63123 l -1.07311,1.43842 2.73986,2.35171 z" id="path8"/>
+								</g>
+							</svg>
+						  </a>
+					  </div>
+					  <div class=" flex flex-col md:flex-row gap-16">
+						  <div class="flex flex-col justify-center self-center">
+							  <h2 class="mb-6 text-sm font-semibold text-empty uppercase flex md:justify-normal justify-center">Contacto</h2>
+							  <ul class="text-[#181818] font-medium">
+								  <li class="mb-4">
+									  <a href="mailto:bastardos.series@gmail.com" class="hover:underline flex md:justify-normal justify-center underline">Arrimon.business@gmail.com</a>
+								  </li>
+							  </ul>
+						  </div>
+						  <div>
+							  <h2 class="mb-6 text-sm font-semibold text-empty uppercase flex md:justify-normal justify-center">Legal</h2>
+							  <ul class="text-[#181818] font-medium">
+								  <li class="mb-4">
+									  <a href="#" class="hover:underline flex md:justify-normal justify-center">Política de privacidad</a>
+								  </li>
+								  <li>
+									  <a href="#" class="hover:underline flex md:justify-normal justify-center">Términos &amp; Condiciones</a>
+								  </li>
+							  </ul>
+						  </div>
+					  </div>
+				  </div>
+				  <hr class="my-6 border-gray-200 dark:border-gray-700 lg:my-8" />
+				  <div class="flex justify-center md:justify-start">
+					  <span class="text-sm text-empty ">© 2023 <a href="https://flowbite.com/" class="hover:underline">Arrimón™</a>. Todos los derechos reservados.
+					  </span>
+				  </div>
+				</div>
+			</footer>
+		</div>
+			
+									  
+		</div>
+	</body>
+</html>
